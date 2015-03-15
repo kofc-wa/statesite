@@ -1,4 +1,0 @@
-﻿Double check email alias list in LINKS to those in tbl_ValOffices.
-
-Need to get the word out to all EarthLink emails that they need to add kofc-wa.org to their WHITE LIST
-
