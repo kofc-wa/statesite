@@ -1,0 +1,62 @@
+<HTML>
+<HEAD>
+<TITLE>activitiesbar</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<!-- ImageReady Preload Script (activitiesbar.jpg) -->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		activitiesbar2_01_ImageMap_01_over = newImage("images/activitiesbar2_01-ImageMap_.jpg");
+		activitiesbar2_01_ImageMap_02_over = newImage("images/activitiesbar2_01-ImageM-03.jpg");
+		activitiesbar2_01_ImageMap_03_over = newImage("images/activitiesbar2_01-ImageM-04.jpg");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</SCRIPT>
+<!-- End Preload Script -->
+
+
+
+</HEAD>
+<BODY BGCOLOR=#FFFFFF onLoad="preloadImages();">
+<!-- ImageReady Slices (activitiesbar.jpg) -->
+<IMG NAME="activitiesbar2_01" SRC="images/activitiesbar2_01.jpg" WIDTH=105 HEIGHT=310 BORDER=0 USEMAP="#activitiesbar2_01_Map">
+<MAP NAME="activitiesbar2_01_Map">
+<AREA SHAPE="rect" ALT="Activities" COORDS="1,38,103,85" HREF="#activities" TARGET="_self"
+	ONMOUSEOVER="changeImages('activitiesbar2_01', 'images/activitiesbar2_01-ImageM-04.jpg'); return true;"
+	ONMOUSEOUT="changeImages('activitiesbar2_01', 'images/activitiesbar2_01.jpg'); return true;">
+<AREA SHAPE="rect" ALT="Calendar" COORDS="2,121,102,169" HREF="#calendar" TARGET="_self"
+	ONMOUSEOVER="changeImages('activitiesbar2_01', 'images/activitiesbar2_01-ImageM-03.jpg'); return true;"
+	ONMOUSEOUT="changeImages('activitiesbar2_01', 'images/activitiesbar2_01.jpg'); return true;">
+<AREA SHAPE="rect" ALT="Gallery" COORDS="2,191,103,246" HREF="gallery.htm" TARGET="_self"
+	ONMOUSEOVER="changeImages('activitiesbar2_01', 'images/activitiesbar2_01-ImageMap_.jpg'); return true;"
+	ONMOUSEOUT="changeImages('activitiesbar2_01', 'images/activitiesbar2_01.jpg'); return true;">
+</MAP>
+<!-- End ImageReady Slices -->
+
+
+
+
+</BODY>
+</HTML>

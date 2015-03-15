@@ -1,0 +1,149 @@
+<html>
+<head>
+<script>
+var slideArray = new Array();
+var slideParameters = new Array();
+var slideIndex = 1;
+var hndAdvance;
+var blnAdvance = true;
+
+slideArray[slideIndex++] = "./2jmintro.htm,./silence.mp3";
+slideArray[slideIndex++] = "./2jm3.htm,./2jm.mp3";
+slideArray[slideIndex++] = "./2jm4.htm,./ourfather.mp3";
+slideArray[slideIndex++] = "./2jm5.htm,./hailmary.mp3";
+slideArray[slideIndex++] = "./2jm6.htm,./hailmary.mp3";
+slideArray[slideIndex++] = "./2jm7.htm,./hailmary.mp3";
+slideArray[slideIndex++] = "./2jm8.htm,./hailmary.mp3";
+slideArray[slideIndex++] = "./2jm9.htm,./hailmary.mp3";
+slideArray[slideIndex++] = "./2jm10.htm,./hailmary.mp3";
+slideArray[slideIndex++] = "./2jm11.htm,./hailmary.mp3";
+slideArray[slideIndex++] = "./2jm12.htm,./hailmary.mp3";
+slideArray[slideIndex++] = "./2jm13.htm,./hailmary.mp3";
+slideArray[slideIndex++] = "./2jm14.htm,./hailmary.mp3";
+slideArray[slideIndex++] = "./2jm15.htm,./gbsavus.mp3";
+slideArray[slideIndex++] = "./autoadvance.htm,./slide4.mp3";
+
+
+function PlaySlide(slideNumber){
+	slideIndex = slideNumber
+	blnAdvance = true;
+	if (slideIndex < 1 ){
+		slideIndex = 1;
+		blnAdvance = false;
+	}
+	if (slideIndex >= slideArray.length){
+		slideIndex = slideArray.length - 1;
+		blnAdvance = false;
+	}
+	if (blnAdvance == true) {
+		// Pull picture and sound parameters out of the slide array for this slide
+		slideParameters = slideArray[slideIndex].split(",");
+		// Put a picture in the picture frame only if a picture exists and isn't blank
+		if (slideParameters[0] && slideParameters[0] != ""){
+		parent.frmPicture.document.location.href=slideParameters[0];  
+		}
+		// Set the new sound only if a sound exists and isn't blank
+		if (slideParameters[1] && slideParameters[1] != ""){
+			if ((navigator.userAgent.indexOf("IE") > -1) && (navigator.platform == "Win32")) {
+				document.MediaPlayer.Open(slideParameters[1]);
+				parent.frmSound.document.open();
+				parent.frmSound.document.write('<html><body><center><font size="-1">Page ');
+				parent.frmSound.document.write(slideIndex + ' of ' + (slideArray.length - 1));
+				parent.frmSound.document.write(' </font></center></body></html>');
+				parent.frmSound.document.close();
+	 		}
+	 		else {
+	 			parent.frmSound.document.open();
+				parent.frmSound.document.write('<html><body><font size="-1">Page ');
+				parent.frmSound.document.write(slideIndex + ' of ' + (slideArray.length - 1));
+				parent.frmSound.document.write('<\/font><br>');
+				parent.frmSound.document.write('<embed');
+				if (navigator.platform.indexOf("Win32") > -1) {
+					parent.frmSound.document.open();
+					parent.frmSound.document.write(' type="application/x-mplayer2"');
+					parent.frmSound.document.write(' src="' + slideParameters[1] + '"');
+					parent.frmSound.document.write(' pluginspage="http://www.microsoft.com/windows/windowsmedia/en/download/default.asp"');
+					parent.frmSound.document.write(' autostart="true" width="144" height="45"');
+				}
+				else {
+					parent.frmSound.document.open();
+					parent.frmSound.document.write(' type="audio/wav"');
+					parent.frmSound.document.write(' src="' + slideParameters[1] + '"');
+					parent.frmSound.document.write(' autostart="true" width="144" height="45"');
+				}
+				parent.frmSound.document.write('></embed>');
+				parent.frmSound.document.write('</body></html>');
+				parent.frmSound.document.close();
+			}
+		}
+	}
+}
+</script>
+<script LANGUAGE="JavaScript" FOR="MediaPlayer" EVENT="PlayStateChange(OldPlayState, NewPlayState)">
+	if(OldPlayState == 2 && NewPlayState == 0 && blnAdvance){
+			if (document.forms[0].autoAdvance.checked == true) {
+			hndAdvance = window.setTimeout("PlaySlide(++slideIndex)", 50);
+		}
+	}
+</script>
+
+</head>
+<body onload=PlaySlide(1)>
+<embed src="../../sound/ourfather.mp3" volume="80%" hidden="true" autostart=false loop="false" height="100">
+<center>
+
+<form>
+	<input type="button" value="Start!" onClick="PlaySlide(1);">
+	<p>
+	<input type="button" value=" &lt;" onClick="blnAdvance = false;PlaySlide(--slideIndex);">
+	<!--[if gte IE 5]>
+	<input type="button" value=" || " onClick="blnAdvance = false;">
+	<![endif]-->
+	<input type="button" value="&gt; " onClick="blnAdvance = false;PlaySlide(++slideIndex);">
+	<p>
+
+	<!--[if gte IE 5]>
+	<p><input type="checkbox" name="autoAdvance" checked> Auto-advance
+	<![endif]-->
+
+	<!-- OPTIONAL TEXT LINKS (if you don't like the buttons)
+	<input type="text" size="2" name="gotoSlide">
+	<input type="button" value="Go to page" onclick="blnAdvance = false;PlaySlide(document.forms[0].gotoSlide.value);">
+	<p>
+	<a href="javascript:blnAdvance = false;PlaySlide(--slideIndex);">Back</a>
+	<a href="javascript:blnAdvance = false;PlaySlide(slideIndex);">Again</a>
+	<a href="javascript:blnAdvance = false;PlaySlide(++slideIndex);">Next</a>
+	-->
+
+</form>
+
+
+
+
+<noscript>
+<p>This presentation relies on JavaScript, which you have disabled! Please enable JavaScript and reload this page.
+</noscript>
+
+<script>
+// Add individual page links to the navigation frame
+var slideNumber;
+document.write('<p>\n');
+for (slideNumber = 1; slideNumber < slideArray.length; slideNumber++){
+	document.write(' <a href="javascript:blnAdvance = false;PlaySlide(' + slideNumber + ');">' + slideNumber + '</a>&nbsp;\n');
+}
+document.write('<p>\n');
+</script>
+<!--[if gte IE 5]>
+<OBJECT ID="MediaPlayer" width="70" height="45"
+	classid="CLSID:22D6F312-B0F6-11D0-94AB-0080C74C7E95"
+	CODEBASE="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=6,4,5,715"
+	standby="Loading Microsoft® Windows® Media Player components..."
+	type="application/x-oleobject">
+	<PARAM NAME="ShowStatusBar" VALUE="False">
+	<PARAM NAME="ShowControls" VALUE="True">
+	<PARAM NAME="AnimationatStart" VALUE="False">
+</OBJECT>
+<![endif]-->
+</center>
+</body>
+</html>

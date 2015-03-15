@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="MSR">
+</Property><Property Name="Solution File" Value="C:\inetpub\KofCWSC20\Reports\MSR\MSR.sln">
+</Property><Property Name="Date" Value="Monday, September 07, 2009">
+</Property><Property Name="Time" Value="12:48 PM">
+</Property></Properties><Event ErrorLevel="2" Project="" Source="MSR.sln" Description="Solution file 'C:\inetpub\KofCWSC20\Reports\MSR\MSR.sln' cannot be converted because it is read-only on disk. To convert the solution, change the permissions on the solution file to allow modification and re-open it.">
+</Event><Event ErrorLevel="3" Project="" Source="MSR.sln" Description="Not Converted">
+</Event></UpgradeLog>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="dsWSC">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=sql2k805.discountasp.net;Initial Catalog=SQL2008R2_137411_kofcwsc</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>6b904842-80bf-4b53-98b3-a1ac963b9c0d</DataSourceID>
+</RptDataSource>

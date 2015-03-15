@@ -1,0 +1,10 @@
+MS SQL Server 2008 Reporting Service Information 
+Report Server URL https://rs2k801.discountasp.net 
+Root Path /kofcwaorg00/reports/ 
+Username    rs_137411  
+Password	<site>
+
+Visual Studio Deployment Information 
+TargetServerURL https://rs2k801.discountasp.net/ReportServer 
+TargeReportFolder /kofcwaorg00/reports/ 
+TargetDataSourceFolder /kofcwaorg00/reports/ 

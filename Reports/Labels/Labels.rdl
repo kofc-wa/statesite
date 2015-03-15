@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2003/10/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <List Name="list1">
+        <Style />
+        <DataSetName>DataSet1</DataSetName>
+        <ReportItems>
+          <Rectangle Name="rectangle1">
+            <ReportItems>
+              <Textbox Name="CSZ">
+                <Style>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <TextAlign>Left</TextAlign>
+                  <PaddingBottom>2pt</PaddingBottom>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingRight>2pt</PaddingRight>
+                </Style>
+                <ZIndex>2</ZIndex>
+                <Top>0.61458in</Top>
+                <rd:DefaultName>CSZ</rd:DefaultName>
+                <Height>0.25in</Height>
+                <Width>2.51042in</Width>
+                <CanGrow>true</CanGrow>
+                <Value>=Fields!CSZ.Value</Value>
+                <Left>0.11458in</Left>
+              </Textbox>
+              <Textbox Name="Address">
+                <Style>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingBottom>2pt</PaddingBottom>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingRight>2pt</PaddingRight>
+                </Style>
+                <ZIndex>1</ZIndex>
+                <Top>0.375in</Top>
+                <rd:DefaultName>Address</rd:DefaultName>
+                <Height>0.25in</Height>
+                <Width>2.51042in</Width>
+                <CanGrow>true</CanGrow>
+                <Value>=Fields!Address.Value</Value>
+                <Left>0.125in</Left>
+              </Textbox>
+              <Textbox Name="FullName">
+                <Style>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingBottom>2pt</PaddingBottom>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingRight>2pt</PaddingRight>
+                </Style>
+                <Top>0.125in</Top>
+                <rd:DefaultName>FullName</rd:DefaultName>
+                <Height>0.25in</Height>
+                <Width>2.51042in</Width>
+                <CanGrow>true</CanGrow>
+                <Value>=Fields!FullName.Value</Value>
+                <Left>0.125in</Left>
+              </Textbox>
+            </ReportItems>
+            <Style />
+          </Rectangle>
+        </ReportItems>
+      </List>
+    </ReportItems>
+    <Style />
+    <Height>1.035in</Height>
+    <ColumnSpacing>0in</ColumnSpacing>
+    <Columns>3</Columns>
+  </Body>
+  <TopMargin>0.35in</TopMargin>
+  <DataSources>
+    <DataSource Name="DB_137411_kofcwsc">
+      <rd:DataSourceID>6d3bfc72-1d3e-4437-a342-f7cdf4b12b58</rd:DataSourceID>
+      <DataSourceReference>DB_137411_kofcwsc</DataSourceReference>
+    </DataSource>
+  </DataSources>
+  <Code />
+  <Width>2.83in</Width>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Fields>
+        <Field Name="FullName">
+          <DataField>FullName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Address">
+          <DataField>Address</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Council">
+          <DataField>Council</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Assembly">
+          <DataField>Assembly</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="City">
+          <DataField>City</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="State">
+          <DataField>State</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PostalCode">
+          <DataField>PostalCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CSZ">
+          <Value>= Fields!City.Value+", "+ Fields!State.Value+"  "+ Fields!PostalCode.Value</Value>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DB_137411_kofcwsc</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>uspWEB_GetLabelDataByOffice</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@INOffice">
+            <Value>=Parameters!INOffice.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@OrderBy">
+            <Value>=Parameters!OrderBy.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+    </DataSet>
+  </DataSets>
+  <rd:SnapToGrid>false</rd:SnapToGrid>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <Description />
+  <rd:ReportID>5937e88e-bfb7-489f-85e6-cc297de17fab</rd:ReportID>
+  <BottomMargin>0.3in</BottomMargin>
+  <ReportParameters>
+    <ReportParameter Name="INOffice">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>(22)</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>INOffice</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="OrderBy">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PostalCode</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>OrderBy</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Language>en-US</Language>
+</Report>

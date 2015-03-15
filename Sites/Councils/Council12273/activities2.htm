@@ -1,0 +1,479 @@
+<!--
+
+SlideShow with Captions and Cross-Fade
+(C)2002 by CodeLifter.com
+
+Shows images and accompanying captions.
+Browsers: NS4-7,IE4-6
+Fade effect only in IE; degrades gracefully.
+NS4 shows default caption only.
+
+INSTRUCTIONS:
+
+Copy this entire script into a completely blank
+page.  Follow the commented instructions within.
+
+//-->
+
+<html>
+
+<head>
+
+<TITLE>Knights Slideshow</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		home_01_over = newImage("images/home_01-over.gif");
+		preloadFlag = true;
+	  }
+
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		activities_01_over = newImage("images/activities_01-over.gif");
+		preloadFlag = true;
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		membership_01_over = newImage("images/membership_01-over.gif");
+		preloadFlag = true;
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		officers_01_over = newImage("images/officers_01-over.gif");
+		preloadFlag = true;
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		rosary_01_over = newImage("images/rosary_01-over.gif");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</SCRIPT>
+<!-- End Preload Script -->
+
+
+<!-- 
+Set up the caption font in the following style.
+Place the style script in the head of the page.
+//-->
+
+<style>
+.Caption {
+font-family: Arial;
+font-weight: bold;
+color:      #123456;
+}
+
+.Caption2 {
+font-family: Arial;
+font-weight: bold;
+color:      #123456;
+}
+
+</style>
+
+<!-- 
+Place the following script in the head of the page.
+Follow the set-up instructions within the script.
+//-->
+
+<script>
+
+// (C) 2002 www.CodeLifter.com
+// http://www.codelifter.com
+// Free for all users, but leave in this header.
+
+// ==============================
+// Set the following variables...
+// ==============================
+
+// Set the slideshow speed (in milliseconds)
+var SlideShowSpeed = 5000;
+
+// Set the duration of crossfade (in seconds)
+var CrossFadeDuration = 3;
+
+var Picture = new Array(); // don't change this
+
+var Caption2 = new Array(); // don't change this
+
+// Specify the image files...
+// To add more images, just continue
+// the pattern, adding to the array below.
+// To use fewer images, remove lines
+// starting at the end of the Picture array.
+// Caution: The number of Pictures *must*
+// equal the number of Captions!
+
+Picture[1]  = './activities/coupleofKnightsneedhelp2.JPG';
+Picture[2]  = './activities/didyougetthatpigeon2.JPG';
+Picture[3]  = './activities/Knightshuntroadkill2.JPG';
+Picture[4]  = './activities/sparethattree2.jpg';
+Picture[5]  = './activities/whereisthecoffee.JPG';
+Picture[6]  = './activities/whoisincharge2.JPG';
+
+
+
+
+
+// Specify the Captions...
+// To add more captions, just continue
+// the pattern, adding to the array below.
+// To use fewer captions, remove lines
+// starting at the end of the Caption array.
+// Caution: The number of Captions *must*
+// equal the number of Pictures!
+
+
+
+Caption2[1]  = "Couple of Knights need help.";
+Caption2[2]  = "Did you get that pigeon?";
+Caption2[3]  = "Knights hunt road kill.";
+Caption2[4]  = "Spare that tree.";
+Caption2[5]  = "Where is the coffee?";
+Caption2[6]  = "Who is in charge?";
+
+
+// =====================================
+// Do not edit anything below this line!
+// =====================================
+
+var tss;
+var iss;
+var jss = 1;
+var pss = Picture.length-1;
+
+var preLoad = new Array();
+for (iss = 1; iss < pss+1; iss++){
+preLoad[iss] = new Image();
+preLoad[iss].src = Picture[iss];}
+
+function runSlideShow(){
+if (document.all){
+document.images.PictureBox.style.filter="blendTrans(duration=2)";
+document.images.PictureBox.style.filter="blendTrans(duration=CrossFadeDuration)";
+document.images.PictureBox.filters.blendTrans.Apply();}
+document.images.PictureBox.src = preLoad[jss].src;
+
+
+
+
+if (document.getElementById) document.getElementById("Caption2Box").innerHTML= Caption2[jss];
+
+if (document.all) document.images.PictureBox.filters.blendTrans.Play();
+
+
+jss = jss + 1;
+if (jss > (pss)) jss=1;
+tss = setTimeout('runSlideShow()', SlideShowSpeed);
+}
+
+</script>
+
+<script>
+function getRefToDiv(divID,oDoc) {
+   if( !oDoc ) { oDoc = document; }
+   if( document.layers ) {
+       if( oDoc.layers[divID] ) { return oDoc.layers[divID]; } else {
+           //repeatedly run through all child layers
+           for( var x = 0, y; !y && x < oDoc.layers.length; x++ ) {
+               //on success, return that layer, else return nothing
+               y = getRefToDiv(divID,oDoc.layers[x].document); }
+           return y; } }
+   if( document.getElementById ) {
+       return document.getElementById(divID); }
+   if( document.all ) {
+       return document.all[divID]; }
+   return false;
+}
+
+function moveDivTo(x,y) {
+myReference = getRefToDiv( 'mydiv' );
+if( !myReference ) { return; }
+if( myReference.style ) { myReference = myReference.style; }
+var noPx = document.childNodes ? 'px' : 0;
+myReference.left = x + noPx;
+myReference.top = y + noPx;
+}
+
+</script>
+
+
+
+   </HEAD>
+   
+	<BODY bgcolor="#FFFFFF" onLoad="runSlideShow();preloadImages();" background="bgblue2.jpg" text="#010050">
+<!-- <BGSOUND SRC="activities/Summer_SM57_110.mp3" autostart=true loop="infinite"  VOLUME=-1000 > //-->
+ <embed src="activities/livinincntry.mid" volume="-1000" hidden="true" autostart=true loop="true" visible="true" height="200" width="128"> 
+
+
+      <FONT face="Arial"></FONT>
+      <div align="center">
+        <center>
+      <TABLE width="650" border="0" cellspacing="0" cellpadding="2" align=
+      "left">
+         <TR>
+            <TD width="130" height="120" colspan="1" rowspan="1" align="left"
+            valign="top" nowrap>
+               <IMG src="logo.jpg" width="120" height="120" alt="K of C Logo"
+               border="0" usemap="#Home">
+			   <br>
+			   <IMG src="clear.gif" width="130" height="3" alt="" border="0">
+            </TD>
+            <TD width="520" height="100" colspan="1" align="center" valign=
+            "top" nowrap>
+               &nbsp;&nbsp;<IMG src="knightstitle.jpg" width="500" height="40"
+               alt="Knights of Columbus" border="0" align="top">
+               <BR clear="none">
+               <IMG src="clear.gif" width="3" height="3" alt="" border="0">
+               <BR>
+               <!-- Enter your Council's name, number address and phone number in these next two lines. NOTE: phone number is optional.--><font face="Arial,sans-serif"><font size="+2">Knights of the&nbsp;<br> Colville
+               Council #12273</font>
+	<br><font face="Arial,sans-serif" size="2">
+	&nbsp;&nbsp; &#149; &nbsp;&nbsp;320 N. Maple St&nbsp;&nbsp; &#149; &nbsp;&nbsp;   Colville,   WA, 99114   &nbsp;&nbsp; &#149; &nbsp;&nbsp;
+    (509)684-6223</font></font><FONT size="2">&nbsp;
+               &#149; &nbsp;&nbsp;
+               <BR clear="none">
+               <IMG src="clear.gif" width="3" height="3" alt="" border="0"><IMG
+               src="bar.jpg" width="500" height="4" alt="" border="0">
+               <BR>
+               &nbsp;&nbsp;</FONT>
+            </TD>
+         </TR>
+         <TR>
+            <TD width="130" colspan="1" align="left" valign="top" nowrap>
+               <p align="center"><a href="index.htm" target="_top" ONMOUSEOVER="changeImages('home_01', 'images/home_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('home_01', 'images/home_01.jpg'); return true;">
+	<IMG NAME="home_01" SRC="images/home_01.jpg" WIDTH=80 HEIGHT=34 BORDER=0> 
+	  </a></p>
+               <p align="center"><a href="activities.htm" target="_top"ONMOUSEOVER="changeImages('activities_01', 'images/activities_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('activities_01', 'images/activities_01.jpg'); return true;">
+	<IMG NAME="activities_01" SRC="images/activities_01.jpg" WIDTH=80 HEIGHT=34 BORDER=0>
+	  </A></p>
+               <p align="center"><a href="membership.htm" target="_top" ONMOUSEOVER="changeImages('membership_01', 'images/membership_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('membership_01', 'images/membership_01.jpg'); return true;">
+	<IMG NAME="membership_01" SRC="images/membership_01.jpg" WIDTH=80 HEIGHT=34 BORDER=0> 
+	  </a></p>
+               <p align="center"><a href="rosary.htm" target="_blank"ONMOUSEOVER="changeImages('rosary_01', 'images/rosary_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('rosary_01', 'images/rosary_01.jpg'); return true;">
+	<IMG NAME="rosary_01" SRC="images/rosary_01.jpg" WIDTH=80 HEIGHT=34 BORDER=0>
+	  </A></p>
+<p align="center"><a href="officers.htm" target="_top" ONMOUSEOVER="changeImages('officers_01', 'images/officers_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('officers_01', 'images/officers_01.jpg'); return true;">
+	<IMG NAME="officers_01" SRC="images/officers_01.jpg" WIDTH=80 HEIGHT=34 BORDER=0> 
+	  </a>
+<p align="center"><a href="links2.htm" target="_top"
+	ONMOUSEOUT="changeImages('links_01', 'images/links_01.gif'); return true;" ONMOUSEOVER="changeImages('links_01', 'images/links_01-over.gif'); return true;"><IMG NAME="links_01" SRC="images/links_01.gif" width=80 height=59 BORDER=0>
+	  </A>
+            </TD>
+            <TD width="520" colspan="1" align="center" valign="top" nowrap>
+               
+		<img src=./activities/coupleofKnightsneedhelp2.JPG name=PictureBox width=426 height=320>
+
+<Table width="550">
+            <TD width="550" colspan="1" align="center" valign="top" nowrap><tr>	
+    <!-- 
+    The next table cell holds the captions.
+    This table cell must have id=CaptionBox and
+    class=Caption in its tag. The default caption
+    shows whilst loading in all browsers; NS4
+    will show only the default caption, throughout.
+    //-->
+    <td id=Caption2Box class=Caption2 width=550 align=center bgcolor=#ffffff>
+    Knights.
+                   </TD> </Tr><tr> <TD width="550" colspan="3">
+                        <HR>
+
+			
+                     </TD>
+                  </TR>
+
+
+        </center>
+
+
+                     <TD WIDTH="550" COLSPAN="3" ALIGN="center" VALIGN="top">
+                     <p align="center"><b><font color="black" size="3" face="Arial">Knights
+                     of Columbus exploring the fine line between work and fun</font></b></p>
+                     <p align="center"><font size="3">W<font face="Arial"><b>ouldn't
+                     you like to <a href="membership.htm#howtojoin">join us</a>
+                     in this fraternal fellowship, serving our Pastor, Parish
+                     and community with hard work and joyous fun?</b></font></font>
+                     </TD>
+                  
+        <center>
+                  
+                  <TR>
+                     <TD width="100">
+                     </TD>
+                     <TD width="150">
+                     </TD>
+                     <TD width="250">
+                     </TD>
+                  </TR>
+                  <TR>
+                     <TD width="100">
+                     </TD>
+                     <TD width="150">
+                     </TD>
+                     <TD width="250">
+                     </TD>
+                  </TR>
+                  <TR>
+                     <TD width="100">
+                     </TD>
+                     <TD width="150">
+                     </TD>
+                     <TD width="250">
+                     </TD>
+                  </TR>
+                  
+                  
+                  <TR>
+                     <TD width="550" colspan="3" height="18">
+                     </TD>
+                  </TR>
+
+<TR>
+                     <TD width="550" colspan="3">
+                     </TD>
+                  </TR>
+
+                  <TR>
+                     <TD width="100">
+                     </TD>
+                     <TD width="150">
+                     </TD>
+                     <TD width="250">
+                     </TD>
+                  </TR>
+                  
+<TR>
+                     <TD width="100">
+                     </TD>
+                     <TD width="150">
+                     </TD>
+                     <TD width="250">
+                     </TD>
+                  </TR><TR>
+                     <TD width="100">
+                     </TD>
+                     <TD width="150">
+                     </TD>
+                     <TD width="250">
+                     </TD>
+                  </TR>
+
+
+
+
+
+                  
+                  <TR>
+                     <TD width="550" colspan="3" height="18">
+                     </TD>
+                  </TR>
+<TR>
+                     <TD width="550" colspan="3">
+                     </TD>
+                  </TR>
+
+                  <TR>
+                     <TD width="100">
+                     </TD>
+                     <TD width="150">
+                     </TD>
+                     <TD width="250">
+                     </TD>
+                  </TR>
+                  <TR>
+                     <TD width="100">
+                     </TD>
+                     <TD width="150">
+                     </TD>
+                     <TD width="250">
+                     </TD>
+                  </TR>
+                  
+               </TABLE>
+               <P>
+                  <FONT size="-1">&nbsp;</FONT>
+               </P>
+            </TD>
+         </TR>
+         <TR>
+            <TD height="44" colspan="2" align="left">
+               <IMG src="footer.gif" width="650" height="28" alt="" border="0"
+               usemap="#State Council" align="left">
+            </TD>
+         </TR>
+		  <Tr>
+    <td width="131">&nbsp;&nbsp;</td>
+    <td colspan="1" align="left" width="526"><font face="arial" size="1">
+		&copy; Copyright 1999 - 2002 by <a href="http://www.kofc.org">Knights of Columbus</a>. All Rights Reserved. </font>
+      <p><font face="arial" size="1">Send comments or questions to Brian Estelle the web page editor, <!-- insert email address of local web master for your site --><a href="mailto:cozybee@hotmail.com">cozybee@hotmail.com</a>.</font>
+
+  
+  </font></td>
+  </tr>
+      </TABLE>
+      </div>
+      <FONT face="Arial"><MAP name="State Council">
+         <FONT face="Arial"></FONT>
+         <AREA shape="rect" coords="513,2,649,26" href="http://www.kofc-wa.org/" target="_blank" alt="State Council">
+         <FONT face="Arial"> 
+         <!-- You need to replace this link with the URL to your KofC State Council website. Make sure it has the http://www. at the beginning. --></FONT>
+         <AREA shape="rect" coords="370,2,511,26" href="http://www.kofc.org" target="_blank"
+         alt="Knights of Columbus Supreme Council">
+          
+         <AREA shape="rect" coords="253,2,368,25" href="membership.htm" alt=
+         "Membership Information">
+          
+         <AREA shape="rect" coords="164,2,252,25" href="activities.htm" alt=
+         "Activities and Calendar">
+          
+         <AREA shape="rect" coords="73,2,162,25" href="officers.htm" alt=
+         "Officers">
+          
+         <AREA shape="rect" coords="1,2,71,25" href="index.htm" alt="Home">
+      </MAP> <MAP name="Home">
+         <FONT face="Arial"></FONT>
+         <AREA shape="rect" coords="0,0,99,98" href="index.htm" alt="Home">
+         <FONT face="Arial"></FONT>
+      </MAP></FONT>
+   </BODY>
+</HTML>
+

@@ -1,0 +1,4333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2003/10/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <RightMargin>0.5in</RightMargin>
+  <Body>
+    <ReportItems>
+      <Image Name="image1">
+        <ZIndex>11</ZIndex>
+        <Height>1.77083in</Height>
+        <Width>7.125in</Width>
+        <Source>External</Source>
+        <Style />
+        <Value>Head.gif</Value>
+        <Left>1.125in</Left>
+        <Sizing>Fit</Sizing>
+      </Image>
+      <Textbox Name="fCouncil">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <TextAlign>Left</TextAlign>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>10</ZIndex>
+        <Top>1.875in</Top>
+        <rd:DefaultName>fCouncil</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>2.875in</Width>
+        <Value>=First(Fields!fCouncil.Value)</Value>
+        <Left>4in</Left>
+      </Textbox>
+      <Table Name="table1">
+        <ZIndex>9</ZIndex>
+        <Style />
+        <Header>
+          <TableRows>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox2">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>191</ZIndex>
+                      <rd:DefaultName>textbox2</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox3">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>190</ZIndex>
+                      <rd:DefaultName>textbox3</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox5">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontStyle>Italic</FontStyle>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>189</ZIndex>
+                      <rd:DefaultName>textbox5</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>MEMBERSHIP ACTIVITIES</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+        </Header>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox6">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>188</ZIndex>
+                      <rd:DefaultName>textbox6</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fMA1">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>187</ZIndex>
+                      <rd:DefaultName>fMA1</rd:DefaultName>
+                      <Value>=First(Fields!fMA1.Value)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox4">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>186</ZIndex>
+                      <Value>Reactivated/readmitted/reinstated a former member this month(5 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox1">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>185</ZIndex>
+                      <rd:DefaultName>textbox1</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fMA2">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>184</ZIndex>
+                      <rd:DefaultName>fMA2</rd:DefaultName>
+                      <Value>=First(Fields!fMA2.Value)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox7">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>183</ZIndex>
+                      <rd:DefaultName>textbox7</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Council held a membership drive this month (5 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox8">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>182</ZIndex>
+                      <rd:DefaultName>textbox8</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fMA3">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>181</ZIndex>
+                      <rd:DefaultName>fMA3</rd:DefaultName>
+                      <Value>=Fields!fMA3.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fMA3Text">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>180</ZIndex>
+                      <rd:DefaultName>fMA3Text</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=First(Fields!fMA3Text.Value)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox9">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>179</ZIndex>
+                      <rd:DefaultName>textbox9</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fMA4">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>178</ZIndex>
+                      <rd:DefaultName>fMA4</rd:DefaultName>
+                      <Value>=Fields!fMA4.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox16">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>177</ZIndex>
+                      <rd:DefaultName>textbox16</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Council has a certified First Degree Team (One Time Bonus of 25 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox18">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>176</ZIndex>
+                      <rd:DefaultName>textbox18</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fMA5">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>175</ZIndex>
+                      <rd:DefaultName>fMA5</rd:DefaultName>
+                      <Value>=Fields!fMA5.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox20">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>174</ZIndex>
+                      <rd:DefaultName>textbox20</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Council’s First Degree Team conducted a 1st Degree this month (5 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox10">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>173</ZIndex>
+                      <rd:DefaultName>textbox10</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fMA6">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>172</ZIndex>
+                      <rd:DefaultName>fMA6</rd:DefaultName>
+                      <Value>=Fields!fMA6.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fMA6aText">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>171</ZIndex>
+                      <rd:DefaultName>fMA6aText</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=First(Fields!fMA6aText.Value)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox17">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>170</ZIndex>
+                      <rd:DefaultName>textbox17</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fMA7">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>169</ZIndex>
+                      <rd:DefaultName>fMA7</rd:DefaultName>
+                      <Value>=Fields!fMA7.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fMA7aText">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>168</ZIndex>
+                      <rd:DefaultName>fMA7aText</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=First(Fields!fMA7aText.Value)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox19">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>167</ZIndex>
+                      <rd:DefaultName>textbox19</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox29">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>166</ZIndex>
+                      <rd:DefaultName>textbox29</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox22">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>165</ZIndex>
+                      <rd:DefaultName>textbox22</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox23">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>164</ZIndex>
+                      <rd:DefaultName>textbox23</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox24">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>163</ZIndex>
+                      <rd:DefaultName>textbox24</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox25">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontStyle>Italic</FontStyle>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>162</ZIndex>
+                      <rd:DefaultName>textbox25</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>CHURCH PROGRAM</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox26">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>161</ZIndex>
+                      <rd:DefaultName>textbox26</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fCH1">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>160</ZIndex>
+                      <rd:DefaultName>fCH1</rd:DefaultName>
+                      <Value>=Fields!fCH1.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox28">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>159</ZIndex>
+                      <rd:DefaultName>textbox28</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Invited a priest to your home for a family dinner OR council prayed the Rosary this month? (5 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox21">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>158</ZIndex>
+                      <rd:DefaultName>textbox21</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fCH2">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>157</ZIndex>
+                      <rd:DefaultName>fCH2</rd:DefaultName>
+                      <Value>=Fields!fCH2.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox31">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>156</ZIndex>
+                      <rd:DefaultName>textbox31</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Submitted Church Activity Award Application to State Church Chairman by April 10th (One Time Bonus of 10 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox32">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>155</ZIndex>
+                      <rd:DefaultName>textbox32</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fCH3">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>154</ZIndex>
+                      <rd:DefaultName>fCH3</rd:DefaultName>
+                      <Value>=Fields!fCH3.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox34">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>153</ZIndex>
+                      <rd:DefaultName>textbox34</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Submitted Fr. McGivney Guild Applications to Supreme (One Time Bonus of 5 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox58">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>152</ZIndex>
+                      <rd:DefaultName>textbox58</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox62">
+                      <ZIndex>151</ZIndex>
+                      <rd:DefaultName>textbox62</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox63">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>150</ZIndex>
+                      <rd:DefaultName>textbox63</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>MISCELLANEOUS CHURCH ACTIVITIES (5 Pts):</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox56">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>149</ZIndex>
+                      <rd:DefaultName>textbox56</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox57">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>148</ZIndex>
+                      <rd:DefaultName>textbox57</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="CHM">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>147</ZIndex>
+                      <rd:DefaultName>CHM</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!CHM.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox59">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>146</ZIndex>
+                      <rd:DefaultName>textbox59</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox60">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>145</ZIndex>
+                      <rd:DefaultName>textbox60</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox61">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>144</ZIndex>
+                      <rd:DefaultName>textbox61</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox53">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>143</ZIndex>
+                      <rd:DefaultName>textbox53</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox54">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>142</ZIndex>
+                      <rd:DefaultName>textbox54</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox55">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontStyle>Italic</FontStyle>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>141</ZIndex>
+                      <rd:DefaultName>textbox55</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>COMMUNITY PROGRAM</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox50">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>140</ZIndex>
+                      <rd:DefaultName>textbox50</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fCM1">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>139</ZIndex>
+                      <rd:DefaultName>fCM1</rd:DefaultName>
+                      <Value>=Fields!fCM1.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fCM1aText">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>138</ZIndex>
+                      <rd:DefaultName>fCM1aText</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!fCM1aText.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox47">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>137</ZIndex>
+                      <rd:DefaultName>textbox47</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fCM2">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>136</ZIndex>
+                      <rd:DefaultName>fCM2</rd:DefaultName>
+                      <Value>=Fields!fCM2.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox49">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>135</ZIndex>
+                      <rd:DefaultName>textbox49</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Community Activity Award Application to State Community Chairman by April 10th (One Time Bonus of 10 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox48">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>134</ZIndex>
+                      <rd:DefaultName>textbox48</rd:DefaultName>
+                      <Value />
+                      <CanGrow>true</CanGrow>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox51">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>133</ZIndex>
+                      <rd:DefaultName>textbox51</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox52">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>132</ZIndex>
+                      <rd:DefaultName>textbox52</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>MISCELLANEOUS COMMUNITY ACTIVITIES (Pts.):</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox44">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>131</ZIndex>
+                      <rd:DefaultName>textbox44</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox45">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>130</ZIndex>
+                      <rd:DefaultName>textbox45</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="CMM">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>129</ZIndex>
+                      <rd:DefaultName>CMM</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!CMM.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox41">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>128</ZIndex>
+                      <rd:DefaultName>textbox41</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox42">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>127</ZIndex>
+                      <rd:DefaultName>textbox42</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox43">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>126</ZIndex>
+                      <rd:DefaultName>textbox43</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox38">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>125</ZIndex>
+                      <rd:DefaultName>textbox38</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox39">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>124</ZIndex>
+                      <rd:DefaultName>textbox39</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox40">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontStyle>Italic</FontStyle>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>123</ZIndex>
+                      <rd:DefaultName>textbox40</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>PRO-LIFE PROGRAM</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox35">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>122</ZIndex>
+                      <rd:DefaultName>textbox35</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fPL1">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>121</ZIndex>
+                      <rd:DefaultName>fPL1</rd:DefaultName>
+                      <Value>=Fields!fPL1.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox37">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>120</ZIndex>
+                      <rd:DefaultName>textbox37</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Submitted Herbert Liebert Award Application to State Pro-Life Chairman by April 1st (One Time Bonus of 10 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox100">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>119</ZIndex>
+                      <rd:DefaultName>textbox100</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fPL2">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>118</ZIndex>
+                      <rd:DefaultName>fPL2</rd:DefaultName>
+                      <Value>=Fields!fPL2.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox102">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>117</ZIndex>
+                      <rd:DefaultName>textbox102</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Conducted Pro-Life Poster/Essay Contest; sbmt essays to State Pro-Life Chrmn by April 1st (1 Time Bnus of 5 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox65">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>116</ZIndex>
+                      <rd:DefaultName>textbox65</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox68">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>115</ZIndex>
+                      <rd:DefaultName>textbox68</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox71">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>114</ZIndex>
+                      <rd:DefaultName>textbox71</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>MISCELLANEOUS PRO-LIFE ACTIVITIES(5 Pts.):</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox97">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>113</ZIndex>
+                      <rd:DefaultName>textbox97</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox98">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>112</ZIndex>
+                      <rd:DefaultName>textbox98</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="PLM">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>111</ZIndex>
+                      <rd:DefaultName>PLM</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!PLM.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox94">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>110</ZIndex>
+                      <rd:DefaultName>textbox94</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox95">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>109</ZIndex>
+                      <rd:DefaultName>textbox95</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox96">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>108</ZIndex>
+                      <rd:DefaultName>textbox96</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox30">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>107</ZIndex>
+                      <rd:DefaultName>textbox30</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox36">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>106</ZIndex>
+                      <rd:DefaultName>textbox36</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox46">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>105</ZIndex>
+                      <rd:DefaultName>textbox46</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox91">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>104</ZIndex>
+                      <rd:DefaultName>textbox91</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox92">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>103</ZIndex>
+                      <rd:DefaultName>textbox92</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox93">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontStyle>Italic</FontStyle>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>102</ZIndex>
+                      <rd:DefaultName>textbox93</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>COUNCIL PROGRAM</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox88">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>101</ZIndex>
+                      <rd:DefaultName>textbox88</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fCP1">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>100</ZIndex>
+                      <rd:DefaultName>fCP1</rd:DefaultName>
+                      <Value>=Fields!fCP1.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox90">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>99</ZIndex>
+                      <rd:DefaultName>textbox90</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Conducted Membership Blitz(Oct/Novr 2005) and reported to State Membership Director (One Time Bonus of 30 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox85">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>98</ZIndex>
+                      <rd:DefaultName>textbox85</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fCP2">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>97</ZIndex>
+                      <rd:DefaultName>fCP2</rd:DefaultName>
+                      <Value>=Fields!fCP2.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox87">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>96</ZIndex>
+                      <rd:DefaultName>textbox87</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Conducted Membership Blitz (March/April 2006) and reported to State Membership Director (One Time Bonus of 30 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox82">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>95</ZIndex>
+                      <rd:DefaultName>textbox82</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fCP3">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>94</ZIndex>
+                      <rd:DefaultName>fCP3</rd:DefaultName>
+                      <Value>=Fields!fCP3.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox84">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>93</ZIndex>
+                      <rd:DefaultName>textbox84</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Recognized a “Knight of the Month” this month (5 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox79">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>92</ZIndex>
+                      <rd:DefaultName>textbox79</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fCP4">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>91</ZIndex>
+                      <rd:DefaultName>fCP4</rd:DefaultName>
+                      <Value>=Fields!fCP4.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox81">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>90</ZIndex>
+                      <rd:DefaultName>textbox81</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Submitted Knight of the Year Award Application to State Council Chairman by April 1st (One Time Bonus of 10 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox76">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>89</ZIndex>
+                      <rd:DefaultName>textbox76</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fCP5">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>88</ZIndex>
+                      <rd:DefaultName>fCP5</rd:DefaultName>
+                      <Value>=Fields!fCP5.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox78">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>87</ZIndex>
+                      <rd:DefaultName>textbox78</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Submitted Harry J. Tucker Fraternalism Award Application to State Council Chairman by April 1(One Time Bonus of 10 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox73">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>86</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <rd:DefaultName>textbox73</rd:DefaultName>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fCP6">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>85</ZIndex>
+                      <rd:DefaultName>fCP6</rd:DefaultName>
+                      <Value>=Fields!fCP6.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox75">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>84</ZIndex>
+                      <rd:DefaultName>textbox75</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Submitted Council Activity Award Application to State Council Chairman by April 10th (One Time Bonus of 10 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox70">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>83</ZIndex>
+                      <rd:DefaultName>textbox70</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fCP7">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>82</ZIndex>
+                      <rd:DefaultName>fCP7</rd:DefaultName>
+                      <Value>=Fields!fCP7.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox72">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>81</ZIndex>
+                      <rd:DefaultName>textbox72</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Published a Monthly Bulletin or Newsletter this month (10 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox67">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>80</ZIndex>
+                      <rd:DefaultName>textbox67</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fCP8">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>79</ZIndex>
+                      <rd:DefaultName>fCP8</rd:DefaultName>
+                      <Value>=Fields!fCP8.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox69">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>78</ZIndex>
+                      <rd:DefaultName>textbox69</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Presented Shining Armor Award Pin to a New Member (One Time Bonus of 20 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox64">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>77</ZIndex>
+                      <rd:DefaultName>textbox64</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fCP9">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>76</ZIndex>
+                      <rd:DefaultName>fCP9</rd:DefaultName>
+                      <Value>=Fields!fCP9.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox66">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>75</ZIndex>
+                      <rd:DefaultName>textbox66</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Member(s) of Council Visited Another Council this month (5 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox27">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>74</ZIndex>
+                      <rd:DefaultName>textbox27</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fCP10">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>73</ZIndex>
+                      <rd:DefaultName>fCP10</rd:DefaultName>
+                      <Value>=Fields!fCP10.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox33">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>72</ZIndex>
+                      <rd:DefaultName>textbox33</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Sponsored established a Round Table (Forms Submitted) (One Time Bonus of 45 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox137">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>71</ZIndex>
+                      <rd:DefaultName>textbox137</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fCP11">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>70</ZIndex>
+                      <rd:DefaultName>fCP11</rd:DefaultName>
+                      <Value>=Fields!fCP11.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox139">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>69</ZIndex>
+                      <rd:DefaultName>textbox139</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Submitted Council Phone Tree to General Program Director (One Time Bonus of 5 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox74">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>68</ZIndex>
+                      <rd:DefaultName>textbox74</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox77">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>67</ZIndex>
+                      <rd:DefaultName>textbox77</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox80">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>66</ZIndex>
+                      <rd:DefaultName>textbox80</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>MISCELLANEOUS COUNCIL ACTIVITIES (5Pts.):</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox134">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>65</ZIndex>
+                      <rd:DefaultName>textbox134</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox135">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>64</ZIndex>
+                      <rd:DefaultName>textbox135</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="CPM">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>63</ZIndex>
+                      <rd:DefaultName>CPM</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!CPM.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox131">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>62</ZIndex>
+                      <rd:DefaultName>textbox131</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox132">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>61</ZIndex>
+                      <rd:DefaultName>textbox132</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox133">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>60</ZIndex>
+                      <rd:DefaultName>textbox133</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox128">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>59</ZIndex>
+                      <rd:DefaultName>textbox128</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox129">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>58</ZIndex>
+                      <rd:DefaultName>textbox129</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox130">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontStyle>Italic</FontStyle>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>57</ZIndex>
+                      <rd:DefaultName>textbox130</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>FAMILY PROGRAM</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox125">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>56</ZIndex>
+                      <rd:DefaultName>textbox125</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fFP1">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>55</ZIndex>
+                      <rd:DefaultName>fFP1</rd:DefaultName>
+                      <Value>=Fields!fFP1.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox127">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>54</ZIndex>
+                      <rd:DefaultName>textbox127</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Nominated a “Family of the Month” to Supreme by 15th of month? (10 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox122">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>53</ZIndex>
+                      <rd:DefaultName>textbox122</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fFP2">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>52</ZIndex>
+                      <rd:DefaultName>fFP2</rd:DefaultName>
+                      <Value>=Fields!fFP2.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox124">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>51</ZIndex>
+                      <rd:DefaultName>textbox124</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Submitted Family of the Year Award Application to State Family Chairman by April 1st (One Time Bonus of 10 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox119">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>50</ZIndex>
+                      <rd:DefaultName>textbox119</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fFP3">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>49</ZIndex>
+                      <rd:DefaultName>fFP3</rd:DefaultName>
+                      <Value>=Fields!fFP3.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox121">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>48</ZIndex>
+                      <rd:DefaultName>textbox121</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Submitted Family Activity Award Application to State Family Chairman by April 10th (One Time Bonus of 10 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox83">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>47</ZIndex>
+                      <rd:DefaultName>textbox83</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox86">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>46</ZIndex>
+                      <rd:DefaultName>textbox86</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox89">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>45</ZIndex>
+                      <rd:DefaultName>textbox89</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>MISCELLANEOUS FAMILY ACTIVITIES (5 Pts.):</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox116">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>44</ZIndex>
+                      <rd:DefaultName>textbox116</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox117">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>43</ZIndex>
+                      <rd:DefaultName>textbox117</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="FPM">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>42</ZIndex>
+                      <rd:DefaultName>FPM</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!FPM.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox113">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>41</ZIndex>
+                      <rd:DefaultName>textbox113</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox114">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>40</ZIndex>
+                      <rd:DefaultName>textbox114</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox115">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>39</ZIndex>
+                      <rd:DefaultName>textbox115</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox110">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>38</ZIndex>
+                      <rd:DefaultName>textbox110</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox111">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>37</ZIndex>
+                      <rd:DefaultName>textbox111</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox112">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontStyle>Italic</FontStyle>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>36</ZIndex>
+                      <rd:DefaultName>textbox112</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>YOUTH PROGRAM</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox107">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>35</ZIndex>
+                      <rd:DefaultName>textbox107</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fYP1">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>34</ZIndex>
+                      <rd:DefaultName>fYP1</rd:DefaultName>
+                      <Value>=Fields!fYP1.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox109">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>33</ZIndex>
+                      <rd:DefaultName>textbox109</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Sponsor a Squires, Scouting, CY0, 4H, Free Throw, or Teen Dance Activity this Month? (5 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox159">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>32</ZIndex>
+                      <rd:DefaultName>textbox159</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fYP2">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>31</ZIndex>
+                      <rd:DefaultName>fYP2</rd:DefaultName>
+                      <Value>=Fields!fYP2.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox161">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>30</ZIndex>
+                      <rd:DefaultName>textbox161</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Submitted Youth Activity Award Application to State Youth Chairman by April 10th (One Time Bonus of 10 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox156">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>29</ZIndex>
+                      <rd:DefaultName>textbox156</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fYP3">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>28</ZIndex>
+                      <rd:DefaultName>fYP3</rd:DefaultName>
+                      <Value>=Fields!fYP3.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox158">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>27</ZIndex>
+                      <rd:DefaultName>textbox158</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Sponsored/established a Squires Circle (One Time Bonus of 15 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox99">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>26</ZIndex>
+                      <rd:DefaultName>textbox99</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox101">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>25</ZIndex>
+                      <rd:DefaultName>textbox101</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox103">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>24</ZIndex>
+                      <rd:DefaultName>textbox103</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>MISCELLANEOUS YOUTH ACTIVITIES (5 Pts.):</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox153">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>23</ZIndex>
+                      <rd:DefaultName>textbox153</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox154">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>22</ZIndex>
+                      <rd:DefaultName>textbox154</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="YPM">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>21</ZIndex>
+                      <rd:DefaultName>YPM</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!YPM.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox150">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>20</ZIndex>
+                      <rd:DefaultName>textbox150</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox151">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>19</ZIndex>
+                      <rd:DefaultName>textbox151</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox152">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>18</ZIndex>
+                      <rd:DefaultName>textbox152</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox147">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>17</ZIndex>
+                      <rd:DefaultName>textbox147</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox148">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>16</ZIndex>
+                      <rd:DefaultName>textbox148</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox149">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <FontStyle>Italic</FontStyle>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                        <FontWeight>700</FontWeight>
+                      </Style>
+                      <ZIndex>15</ZIndex>
+                      <rd:DefaultName>textbox149</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>VOCATIONS PROGRAM</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox144">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>14</ZIndex>
+                      <rd:DefaultName>textbox144</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fVP1">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>13</ZIndex>
+                      <rd:DefaultName>fVP1</rd:DefaultName>
+                      <Value>=Fields!fVP1.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox146">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>12</ZIndex>
+                      <rd:DefaultName>textbox146</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Said a Prayer for Vocations at Monthly Meeting (5 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox141">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>11</ZIndex>
+                      <rd:DefaultName>textbox141</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fVP2">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>10</ZIndex>
+                      <rd:DefaultName>fVP2</rd:DefaultName>
+                      <Value>=Fields!fVP2.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fVP2a">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>9</ZIndex>
+                      <rd:DefaultName>fVP2a</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!fVP2a.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox118">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>8</ZIndex>
+                      <rd:DefaultName>textbox118</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="fVP3">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>7</ZIndex>
+                      <rd:DefaultName>fVP3</rd:DefaultName>
+                      <Value>=Fields!fVP3.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox140">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>6</ZIndex>
+                      <rd:DefaultName>textbox140</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>Contributed $3.65/member to State PFH Fund (One Time Bonus of 10 Pts.)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox106">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>5</ZIndex>
+                      <rd:DefaultName>textbox106</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox108">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>4</ZIndex>
+                      <rd:DefaultName>textbox108</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox120">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>3</ZIndex>
+                      <rd:DefaultName>textbox120</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>MISCELLANEOUS VOCATIONS ACTIVITIES (5 Pts.):</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+            <TableRow>
+              <Height>0.25in</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox104">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>2</ZIndex>
+                      <rd:DefaultName>textbox104</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox105">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <ZIndex>1</ZIndex>
+                      <rd:DefaultName>textbox105</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="VPM">
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingRight>2pt</PaddingRight>
+                      </Style>
+                      <rd:DefaultName>VPM</rd:DefaultName>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!VPM.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <DataSetName>DB_85346</DataSetName>
+        <Top>2.625in</Top>
+        <Width>8in</Width>
+        <Left>0.25in</Left>
+        <TableColumns>
+          <TableColumn>
+            <Width>0.24242in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.12122in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>7.63636in</Width>
+          </TableColumn>
+        </TableColumns>
+      </Table>
+      <Textbox Name="DateEntered">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <Format>d</Format>
+          <VerticalAlign>Middle</VerticalAlign>
+          <TextAlign>Center</TextAlign>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>8</ZIndex>
+        <Top>2.25in</Top>
+        <rd:DefaultName>DateEntered</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>0.75in</Width>
+        <Value>=First(Fields!DateEntered.Value)</Value>
+        <Left>7.5in</Left>
+      </Textbox>
+      <Textbox Name="FromChairman">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>7</ZIndex>
+        <Top>2.25in</Top>
+        <rd:DefaultName>FromChairman</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>5in</Width>
+        <Value>=First(Fields!FromChairman.Value)</Value>
+        <Left>1.625in</Left>
+      </Textbox>
+      <Textbox Name="DISTRICT">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <VerticalAlign>Middle</VerticalAlign>
+          <TextAlign>Center</TextAlign>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>6</ZIndex>
+        <Top>1.875in</Top>
+        <rd:DefaultName>DISTRICT</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>0.375in</Width>
+        <Value>=First(Fields!DISTRICT.Value)</Value>
+        <Left>7.875in</Left>
+      </Textbox>
+      <Textbox Name="PeriodText">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>5</ZIndex>
+        <Top>1.875in</Top>
+        <rd:DefaultName>PeriodText</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>1.5in</Width>
+        <Value>=First(Fields!PeriodText.Value)</Value>
+        <Left>1.5in</Left>
+      </Textbox>
+      <Textbox Name="textbox11">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>4</ZIndex>
+        <Top>1.875in</Top>
+        <rd:DefaultName>textbox11</rd:DefaultName>
+        <Height>0.25in</Height>
+        <Width>1.25in</Width>
+        <Value>Reporting Period:</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Textbox Name="textbox12">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <Top>1.875in</Top>
+        <Height>0.25in</Height>
+        <Width>0.625in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>Council:</Value>
+        <Left>3.25in</Left>
+      </Textbox>
+      <Textbox Name="textbox13">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <Top>1.875in</Top>
+        <Height>0.25in</Height>
+        <Width>0.625in</Width>
+        <Value>District:</Value>
+        <Left>7.125in</Left>
+      </Textbox>
+      <Textbox Name="textbox14">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <Top>2.25in</Top>
+        <Height>0.25in</Height>
+        <Width>1.375in</Width>
+        <Value>Program Chairman:</Value>
+        <Left>0.125in</Left>
+      </Textbox>
+      <Textbox Name="textbox15">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <Top>2.25in</Top>
+        <Height>0.25in</Height>
+        <Width>0.5in</Width>
+        <CanGrow>true</CanGrow>
+        <Value>Date:</Value>
+        <Left>6.875in</Left>
+      </Textbox>
+    </ReportItems>
+    <Style />
+    <Height>18.625in</Height>
+    <ColumnSpacing>0.25in</ColumnSpacing>
+  </Body>
+  <TopMargin>0.1in</TopMargin>
+  <DataSources>
+    <DataSource Name="DB_137411_kofcwsc">
+      <rd:DataSourceID>b0eeec9a-8879-49f1-ad68-2dcf9752d6b4</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>data source=mssql02.discountasp.net;initial catalog=DB_137411_kofcwsc </ConnectString>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <Code />
+  <Width>8.375in</Width>
+  <DataSets>
+    <DataSet Name="DB_85346">
+      <Fields>
+        <Field Name="RPTType">
+          <DataField>RPTType</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Council">
+          <DataField>Council</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="RptPeriod">
+          <DataField>RptPeriod</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="GKFN">
+          <DataField>GKFN</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="FromChairman">
+          <DataField>FromChairman</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DateEntered">
+          <DataField>DateEntered</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="MA1">
+          <DataField>MA1</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="MA2">
+          <DataField>MA2</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="MA3">
+          <DataField>MA3</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="MA3a">
+          <DataField>MA3a</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="MA4">
+          <DataField>MA4</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="MA5">
+          <DataField>MA5</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="MA6">
+          <DataField>MA6</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="MA6a">
+          <DataField>MA6a</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="MA7">
+          <DataField>MA7</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="MA7a">
+          <DataField>MA7a</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CH1">
+          <DataField>CH1</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CH2">
+          <DataField>CH2</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CH3">
+          <DataField>CH3</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CHM">
+          <DataField>CHM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CM1">
+          <DataField>CM1</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CM1a">
+          <DataField>CM1a</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CM2">
+          <DataField>CM2</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CMM">
+          <DataField>CMM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PL1">
+          <DataField>PL1</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="PL2">
+          <DataField>PL2</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="PLM">
+          <DataField>PLM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CP1">
+          <DataField>CP1</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CP2">
+          <DataField>CP2</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CP3">
+          <DataField>CP3</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CP4">
+          <DataField>CP4</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CP5">
+          <DataField>CP5</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CP6">
+          <DataField>CP6</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CP7">
+          <DataField>CP7</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CP8">
+          <DataField>CP8</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CP9">
+          <DataField>CP9</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CP10">
+          <DataField>CP10</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CP11">
+          <DataField>CP11</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CPM">
+          <DataField>CPM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FP1">
+          <DataField>FP1</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="FP2">
+          <DataField>FP2</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="FP3">
+          <DataField>FP3</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="FPM">
+          <DataField>FPM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="YP1">
+          <DataField>YP1</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="YP2">
+          <DataField>YP2</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="YP3">
+          <DataField>YP3</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="YPM">
+          <DataField>YPM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="VP1">
+          <DataField>VP1</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="VP2">
+          <DataField>VP2</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="VP2a">
+          <DataField>VP2a</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="VP3">
+          <DataField>VP3</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="VPM">
+          <DataField>VPM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="C_NUMBER">
+          <DataField>C_NUMBER</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="C_LOCATION">
+          <DataField>C_LOCATION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="C_NAME">
+          <DataField>C_NAME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DISTRICT">
+          <DataField>DISTRICT</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ADD_INFO_1">
+          <DataField>ADD INFO 1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ADD_INFO_2">
+          <DataField>ADD INFO 2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ADD_INFO_3">
+          <DataField>ADD INFO 3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LiabIns">
+          <DataField>LiabIns</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="DioceseID">
+          <DataField>DioceseID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Chartered">
+          <DataField>Chartered</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="ID">
+          <DataField>ID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Period">
+          <DataField>Period</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PeriodText">
+          <DataField>PeriodText</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fMA1">
+          <Value>=iif( Fields!MA1.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fMA2">
+          <Value>=iif( Fields!MA2.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fMA3">
+          <Value>=iif( Fields!MA3.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fMA3Text">
+          <Value>="New member(s) received 1st degree this month.  (No. new members  = " &amp;  Fields!MA3a.Value  &amp; " - 5 Pts.)"</Value>
+        </Field>
+        <Field Name="fCouncil">
+          <Value>= Fields!Council.Value &amp; " - " &amp;  Fields!C_NAME.Value</Value>
+        </Field>
+        <Field Name="fMA4">
+          <Value>=iif( Fields!MA4.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fMA6aText">
+          <Value>="Member(s) received 2nd/3rd degree (No. of members = " &amp;  Fields!MA6a.Value  &amp; ") (One Time Bonus of 10 Pts.)"</Value>
+        </Field>
+        <Field Name="fMA5">
+          <Value>=iif( Fields!MA5.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fMA6">
+          <Value>=iif( Fields!MA6.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fMA7">
+          <Value>=iif( Fields!MA7.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fMA7aText">
+          <Value>="Member(s) received 4th degree (No. of members =   " &amp;  Fields!MA7a.Value  &amp; ") (One Time Bonus of 10 Pts.) "</Value>
+        </Field>
+        <Field Name="fCH1">
+          <Value>=iif( Fields!CH1.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fCH2">
+          <Value>=iif( Fields!CH2.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fCH3">
+          <Value>=iif( Fields!CH3.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fCM1">
+          <Value>=iif( Fields!CM1.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fCM2">
+          <Value>=iif( Fields!CM2.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fCM1aText">
+          <Value>="Council sponsored or participated in a Blood Drive: Pints = " &amp;  Fields!CM1a.Value  &amp;  "(10 Pts.)"</Value>
+        </Field>
+        <Field Name="fPL1">
+          <Value>=iif( Fields!PL1.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fPL2">
+          <Value>=iif( Fields!PL2.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fCP1">
+          <Value>=iif( Fields!CP1.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fCP2">
+          <Value>=iif( Fields!CP2.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fCP3">
+          <Value>=iif( Fields!CP3.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fCP4">
+          <Value>=iif( Fields!CP4.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fCP5">
+          <Value>=iif( Fields!CP5.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fCP6">
+          <Value>=iif( Fields!CP6.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fCP7">
+          <Value>=iif( Fields!CP7.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fCP8">
+          <Value>=iif( Fields!CP8.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fCP9">
+          <Value>=iif( Fields!CP9.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fCP10">
+          <Value>=iif( Fields!CP10.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fCP11">
+          <Value>=iif( Fields!CP11.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fFP1">
+          <Value>=iif( Fields!FP1.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fFP2">
+          <Value>=iif( Fields!FP2.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fFP3">
+          <Value>=iif( Fields!FP3.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fYP1">
+          <Value>=iif( Fields!YP1.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fYP2">
+          <Value>=iif( Fields!YP2.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fYP3">
+          <Value>=iif( Fields!YP3.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fVP2a">
+          <Value>="Provided Financial Support to a Seminarian: Year to date total support  = " &amp;  Fields!VP2a.Value  &amp;  " (10Pts/$100; max 50 Pts. for $500) "</Value>
+        </Field>
+        <Field Name="fVP1">
+          <Value>=iif( Fields!VP1.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fVP2">
+          <Value>=iif( Fields!VP2.Value="True","x","")</Value>
+        </Field>
+        <Field Name="fVP3">
+          <Value>=iif( Fields!VP3.Value="True","x","")</Value>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DB_137411_kofcwsc</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>uspRPT_MSRReport</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@Council">
+            <Value>=Parameters!Council.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@RptPeriod">
+            <Value>=Parameters!RptPeriod.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+    </DataSet>
+  </DataSets>
+  <EmbeddedImages>
+    <EmbeddedImage Name="head">
+      <MIMEType>image/gif</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <LeftMargin>0.5in</LeftMargin>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <Description />
+  <rd:ReportID>d0de38ad-6d7c-409d-87d9-98082b75f81b</rd:ReportID>
+  <BottomMargin>0.1in</BottomMargin>
+  <ReportParameters>
+    <ReportParameter Name="Council">
+      <DataType>Integer</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Council</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="RptPeriod">
+      <DataType>Integer</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Reporting Period</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Language>en-US</Language>
+</Report>

@@ -1,0 +1,38 @@
+<wsc type="root" value="Home" url="/Assembly1955/homepage.asp">
+	<backwsc type="document" value="WSC" url="http://www.kofc-wa.org" target="_parent"/>
+	<bulletins type="folder" value="Assembly Bulletins" url="">
+		<cbul type="document" value="Current Bulletin" url="Bulletins/Current.pdf" target="basefrm"/>
+		<y2004 type="folder" value="2004" url="">
+			<Oct type="document" value="January" url="Bulletins/2004/Jan.pdf" target="basefrm"/>
+			<Mar type="document" value="March" url="Bulletins/2004/Mar.pdf" target="basefrm"/>
+			<May type="document" value="May" url="Bulletins/2004/May.pdf" target="basefrm"/>
+			<Jun type="document" value="June" url="Bulletins/2004/Jun.pdf" target="basefrm"/>
+			<Aug type="document" value="August" url="Bulletins/2005/aug.pdf" target="basefrm"/>			
+			<Sep type="document" value="September" url="Bulletins/2005/sep.pdf" target="basefrm"/>			
+			<Oct type="document" value="October" url="Bulletins/2005/oct.pdf" target="basefrm"/>						
+			<Nov type="document" value="November" url="Bulletins/2005/nov.pdf" target="basefrm"/>						
+			<Dec type="document" value="December" url="Bulletins/2005/dec.pdf" target="basefrm"/>									
+		</y2004>
+		<y2005 type="folder" value="2005" url="">
+			<jan type="document" value="January" url="Bulletins/2005/Jan.pdf" target="basefrm"/>
+			<feb type="document" value="February" url="Bulletins/2005/Feb.pdf" target="basefrm"/>			
+			<mar type="document" value="March" url="Bulletins/2005/Mar.pdf" target="basefrm"/>						
+			<may type="document" value="May" url="Bulletins/2005/May.pdf" target="basefrm"/>									
+			<jun type="document" value="June" url="Bulletins/2005/Jun.pdf" target="basefrm"/>									
+			<jun type="document" value="September" url="Bulletins/2006/Sep.pdf" target="basefrm"/>									
+			<jun type="document" value="October" url="Bulletins/2006/Oct.pdf" target="basefrm"/>									
+			<jun type="document" value="November" url="Bulletins/2006/Nov.pdf" target="basefrm"/>									
+			<jun type="document" value="December" url="Bulletins/2006/Dec.pdf" target="basefrm"/>												
+		</y2005>
+		<y2005 type="folder" value="2006" url="">
+			<jan type="document" value="February" url="Bulletins/2006/Feb.pdf" target="basefrm"/>
+			<jan type="document" value="March" url="Bulletins/2006/Mar.pdf" target="basefrm"/>
+			<jan type="document" value="April" url="Bulletins/2006/Apr.pdf" target="basefrm"/>			
+			<jan type="document" value="May" url="Bulletins/2006/May.pdf" target="basefrm"/>						
+			<jan type="document" value="June" url="Bulletins/2006/Jun.pdf" target="basefrm"/>
+      <jan type="document" value="October" url="Bulletins/2006/Oct.pdf" target="basefrm"/>
+      <jan type="document" value="November" url="Bulletins/2006/Nov.pdf" target="basefrm"/>
+      <jan type="document" value="December" url="Bulletins/2006/Dec.pdf" target="basefrm"/>
+    </y2005>		
+	</bulletins>
+</wsc>

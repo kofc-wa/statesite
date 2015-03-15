@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "MSR", "MSR.rptproj", "{E6424FD2-1E42-4781-A6F2-A35A2CB5F553}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "MSRa", "..\MSRa\MSRa.rptproj", "{175F71ED-C04F-4167-9110-89FB6081CEC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Production|Default = Production|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6424FD2-1E42-4781-A6F2-A35A2CB5F553}.Debug|Default.ActiveCfg = Debug
+		{E6424FD2-1E42-4781-A6F2-A35A2CB5F553}.Debug|Default.Build.0 = Debug
+		{E6424FD2-1E42-4781-A6F2-A35A2CB5F553}.Debug|Default.Deploy.0 = Debug
+		{E6424FD2-1E42-4781-A6F2-A35A2CB5F553}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{E6424FD2-1E42-4781-A6F2-A35A2CB5F553}.DebugLocal|Default.Build.0 = DebugLocal
+		{E6424FD2-1E42-4781-A6F2-A35A2CB5F553}.Production|Default.ActiveCfg = Production
+		{E6424FD2-1E42-4781-A6F2-A35A2CB5F553}.Production|Default.Build.0 = Production
+		{E6424FD2-1E42-4781-A6F2-A35A2CB5F553}.Production|Default.Deploy.0 = Production
+		{175F71ED-C04F-4167-9110-89FB6081CEC9}.Debug|Default.ActiveCfg = DebugLocal
+		{175F71ED-C04F-4167-9110-89FB6081CEC9}.Debug|Default.Build.0 = DebugLocal
+		{175F71ED-C04F-4167-9110-89FB6081CEC9}.Debug|Default.Deploy.0 = DebugLocal
+		{175F71ED-C04F-4167-9110-89FB6081CEC9}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{175F71ED-C04F-4167-9110-89FB6081CEC9}.DebugLocal|Default.Build.0 = DebugLocal
+		{175F71ED-C04F-4167-9110-89FB6081CEC9}.DebugLocal|Default.Deploy.0 = DebugLocal
+		{175F71ED-C04F-4167-9110-89FB6081CEC9}.Production|Default.ActiveCfg = Production
+		{175F71ED-C04F-4167-9110-89FB6081CEC9}.Production|Default.Build.0 = Production
+		{175F71ED-C04F-4167-9110-89FB6081CEC9}.Production|Default.Deploy.0 = Production
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
