@@ -1,0 +1,9 @@
+﻿View source and copy the following pages both logged in and not:
+	State Chariman
+	District Deputies
+	Councils
+	Assemblies
+	Circles
+
+Backup the database and burn to CD
+Run [uspWSC_EOYProcess] from the database

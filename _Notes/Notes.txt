@@ -1,0 +1,5 @@
+﻿Discuss linking council sites and newsletters on the Find...Councils page
+
+make email page rich text box and see if it works...
+
+need to set the page timeout for MSR report
